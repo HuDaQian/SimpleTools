@@ -28,12 +28,15 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'email' => '458331943@qq.com', 'coder' => 'Miloy' }
   s.source           = { :git => 'https://github.com/HuDaQian/SimpleTools.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://hudaqian.github.io'
+  s.social_media_url = 'https://hudaqian.github.io'
 
-  s.ios.deployment_target = '10.0'
-  s.swift_version = '5.0'
-  
-  s.source_files = 'SimpleTools/Classes/**/*'
+  s.ios.deployment_target = '13.0'
+  s.swift_version = '5.1'
+    
+  # UserDefaultWrapper
+  s.subspec "UserDefaultWrapper" do |ss|
+    ss.source_files = 'SimpleTools/Util/UserDefaultWrapper/*.swift'
+  end
   
   # # module simple desc
   #  s.subspec "EasyPopup" do |ss|

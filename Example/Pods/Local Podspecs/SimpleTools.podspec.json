@@ -17,9 +17,14 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "10.0"
+    "ios": "13.0"
   },
-  "swift_versions": "5.0",
-  "source_files": "SimpleTools/Classes/**/*",
-  "swift_version": "5.0"
+  "swift_versions": "5.1",
+  "subspecs": [
+    {
+      "name": "UserDefaultWrapper",
+      "source_files": "SimpleTools/Util/UserDefaultWrapper/*.swift"
+    }
+  ],
+  "swift_version": "5.1"
 }

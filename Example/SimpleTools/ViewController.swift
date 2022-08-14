@@ -10,9 +10,42 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    struct GrandLayer {
+        struct FatherLayer {
+            enum AccountInfo: String {
+                case username
+            }
+        }
+    }
+    
+    @UserDefaultStorage(GrandLayer.FatherLayer.AccountInfo.username, defaultValue: "Miloy")
+    var userName: String?
+    var deleteStatus = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        userName = "Miloy.Grace"
+        let btn = UIButton(frame: CGRect(x: 100, y: 100, width: 200, height: 40))
+        btn.backgroundColor = .cyan
+        btn.setTitle("changeName", for: .normal)
+        btn.addTarget(self, action: #selector(testMethod), for: .touchUpInside)
+        view.addSubview(btn)
+        
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    @objc func testMethod() {
+        if deleteStatus {
+            userName = ""
+        } else {
+            userName = "Change"
+        }
+        deleteStatus.toggle()
+    }
+    
+    @objc func printName() {
+        print(UserDefaults.standard.string(forKey: GrandLayer.FatherLayer.AccountInfo.username) ?? "printTest")
+        print(userName!)
     }
 
     override func didReceiveMemoryWarning() {
