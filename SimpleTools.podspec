@@ -20,7 +20,9 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
   开发效率工具类合集
   Done:
+  这里是已经完成的
   ToDo:
+  这里是准备去做的
                        DESC
 
   s.homepage         = 'https://github.com/HuDaQian/SimpleTools'
@@ -36,7 +38,7 @@ Pod::Spec.new do |s|
   # UserDefaultWrapper
   s.subspec "UserDefaultWrapper" do |ss|
     
-    ss.source_files = 'Source/Util/UserDefaultWrapper/*.swift'
+    ss.source_files = 'Source/UserDefaultWrapper/*.swift'
   end
   
   # # module simple desc

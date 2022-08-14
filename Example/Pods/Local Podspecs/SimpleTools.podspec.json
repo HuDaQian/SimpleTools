@@ -23,7 +23,7 @@
   "subspecs": [
     {
       "name": "UserDefaultWrapper",
-      "source_files": "SimpleTools/Util/UserDefaultWrapper/*.swift"
+      "source_files": "Source/Util/UserDefaultWrapper/*.swift"
     }
   ],
   "swift_version": "5.1"

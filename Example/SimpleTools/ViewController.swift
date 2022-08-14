@@ -17,36 +17,36 @@ class ViewController: UIViewController {
             }
         }
     }
-    
-    @UserDefaultStorage(GrandLayer.FatherLayer.AccountInfo.username.enumToKeys, defaultValue: "Miloy")
-    var userName: String?
-    var deleteStatus = false
-    
+//
+//    @UserDefaultStorage(GrandLayer.FatherLayer.AccountInfo.username.enumTok, defaultValue: "Miloy")
+//    var userName: String?
+//    var deleteStatus = false
+//    
     override func viewDidLoad() {
         super.viewDidLoad()
-        userName = "Miloy.Grace"
-        let btn = UIButton(frame: CGRect(x: 100, y: 100, width: 200, height: 40))
-        btn.backgroundColor = .cyan
-        btn.setTitle("changeName", for: .normal)
-        btn.addTarget(self, action: #selector(testMethod), for: .touchUpInside)
-        view.addSubview(btn)
-        
+//        userName = "Miloy.Grace"
+//        let btn = UIButton(frame: CGRect(x: 100, y: 100, width: 200, height: 40))
+//        btn.backgroundColor = .cyan
+//        btn.setTitle("changeName", for: .normal)
+//        btn.addTarget(self, action: #selector(testMethod), for: .touchUpInside)
+//        view.addSubview(btn)
+//
         // Do any additional setup after loading the view, typically from a nib.
     }
-    
-    @objc func testMethod() {
-        if deleteStatus {
-            userName = ""
-        } else {
-            userName = "Change"
-        }
-        deleteStatus.toggle()
-    }
-    
-    @objc func printName() {
-        print(UserDefaults.standard.string(forKey: GrandLayer.FatherLayer.AccountInfo.username.enumToKeys) ?? "printTest")
-        print(userName!)
-    }
+//
+//    @objc func testMethod() {
+//        if deleteStatus {
+//            userName = ""
+//        } else {
+//            userName = "Change"
+//        }
+//        deleteStatus.toggle()
+//    }
+//
+//    @objc func printName() {
+//        print(UserDefaults.standard.string(forKey: GrandLayer.FatherLayer.AccountInfo.username.enumToKeys) ?? "printTest")
+//        print(userName!)
+//    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
