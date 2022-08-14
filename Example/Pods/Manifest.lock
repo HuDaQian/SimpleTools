@@ -1,0 +1,16 @@
+PODS:
+  - SimpleTools (0.1.0)
+
+DEPENDENCIES:
+  - SimpleTools (from `../`)
+
+EXTERNAL SOURCES:
+  SimpleTools:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SimpleTools: 910ac315774fa53ac1808834f256887aad6c00f4
+
+PODFILE CHECKSUM: 9d076af16ce4dc52931528d683b5d48b9f39a146
+
+COCOAPODS: 1.11.3
