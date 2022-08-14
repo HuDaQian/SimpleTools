@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'SimpleTools'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of SimpleTools.'
+  s.summary          = 'Some tool\'s module for iOS Developer & Code with Swift.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,19 +18,29 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  开发效率工具类合集
+  Done:
+  ToDo:
                        DESC
 
-  s.homepage         = 'https://github.com/458331943@qq.com/SimpleTools'
+  s.homepage         = 'https://github.com/HuDaQian/SimpleTools'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '458331943@qq.com' => '458331943@qq.com' }
-  s.source           = { :git => 'https://github.com/458331943@qq.com/SimpleTools.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'email' => '458331943@qq.com', 'coder' => 'Miloy' }
+  s.source           = { :git => 'https://github.com/HuDaQian/SimpleTools.git', :tag => s.version.to_s }
+  # s.social_media_url = 'https://hudaqian.github.io'
 
   s.ios.deployment_target = '10.0'
-
+  s.swift_version = '5.0'
+  
   s.source_files = 'SimpleTools/Classes/**/*'
+  
+  # # module simple desc
+  #  s.subspec "EasyPopup" do |ss|
+  #      ss.dependency 'SnapKit'
+        
+  #      ss.source_files = 'Sources/EasyPopup/*.swift'
+  #  end
   
   # s.resource_bundles = {
   #   'SimpleTools' => ['SimpleTools/Assets/*.png']
