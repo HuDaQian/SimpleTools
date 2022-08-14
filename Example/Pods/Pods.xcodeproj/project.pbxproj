@@ -25,8 +25,8 @@
 		949B783A67457CACD88C177819873C29 /* Pods-SimpleTools_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 24CA71D49559F952EA1FAD2558DF9B73 /* Pods-SimpleTools_Example-dummy.m */; };
 		D3AB237E448B8399BE638A8FF0EA5F50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		DCDC95998E2F9CD4D9128B36990A71A6 /* Pods-SimpleTools_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E45EE6B0F356B35AE82C7368A775617 /* Pods-SimpleTools_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F041EFC728A8AEBA006C2099 /* UserDefaultWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F041EFC428A8AEBA006C2099 /* UserDefaultWrapper.swift */; };
-		F041EFC828A8AEBA006C2099 /* EnumToKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F041EFC528A8AEBA006C2099 /* EnumToKey.swift */; };
+		F041EFD228A8B46C006C2099 /* UserDefaultWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F041EFD028A8B46C006C2099 /* UserDefaultWrapper.swift */; };
+		F041EFD328A8B46C006C2099 /* EnumToKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F041EFD128A8B46C006C2099 /* EnumToKey.swift */; };
 		F387FEF8FC039E44D0FEC0DCE7766D9D /* Pods-SimpleTools_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 66BC820883871760A1BAAD773BF88310 /* Pods-SimpleTools_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -73,8 +73,8 @@
 		D45B368CD6DE496C3C5E60E05802BF68 /* Pods-SimpleTools_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SimpleTools_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		DC3A501FD4F8D8596F363CFDF5D6FD49 /* Pods-SimpleTools_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SimpleTools_Example.modulemap"; sourceTree = "<group>"; };
 		E03AD3EC146D8C7F1D046E99AEE42C92 /* SimpleTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SimpleTools.release.xcconfig; sourceTree = "<group>"; };
-		F041EFC428A8AEBA006C2099 /* UserDefaultWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultWrapper.swift; sourceTree = "<group>"; };
-		F041EFC528A8AEBA006C2099 /* EnumToKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumToKey.swift; sourceTree = "<group>"; };
+		F041EFD028A8B46C006C2099 /* UserDefaultWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultWrapper.swift; sourceTree = "<group>"; };
+		F041EFD128A8B46C006C2099 /* EnumToKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumToKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,8 +118,7 @@
 		8C71B294737A73F310BD0932579FEBA6 /* SimpleTools */ = {
 			isa = PBXGroup;
 			children = (
-				F041EFC628A8AEBA006C2099 /* Service */,
-				F041EFC228A8AEBA006C2099 /* Util */,
+				F041EFCF28A8B46C006C2099 /* UserDefaultWrapper */,
 				C3CE1CB42D005F1E8CD2B650DE728ACC /* Pod */,
 				5B513724E145A6E02A2D538759C03403 /* Support Files */,
 			);
@@ -198,30 +197,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F041EFC228A8AEBA006C2099 /* Util */ = {
+		F041EFCF28A8B46C006C2099 /* UserDefaultWrapper */ = {
 			isa = PBXGroup;
 			children = (
-				F041EFC328A8AEBA006C2099 /* UserDefaultWrapper */,
+				F041EFD028A8B46C006C2099 /* UserDefaultWrapper.swift */,
+				F041EFD128A8B46C006C2099 /* EnumToKey.swift */,
 			);
-			name = Util;
-			path = Source/Util;
-			sourceTree = "<group>";
-		};
-		F041EFC328A8AEBA006C2099 /* UserDefaultWrapper */ = {
-			isa = PBXGroup;
-			children = (
-				F041EFC428A8AEBA006C2099 /* UserDefaultWrapper.swift */,
-				F041EFC528A8AEBA006C2099 /* EnumToKey.swift */,
-			);
-			path = UserDefaultWrapper;
-			sourceTree = "<group>";
-		};
-		F041EFC628A8AEBA006C2099 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Service;
-			path = Source/Service;
+			name = UserDefaultWrapper;
+			path = Source/UserDefaultWrapper;
 			sourceTree = "<group>";
 		};
 		FE5A009DE9FDD32474B4505BA4BA5E71 /* Pods-SimpleTools_Tests */ = {
@@ -351,9 +334,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F041EFC728A8AEBA006C2099 /* UserDefaultWrapper.swift in Sources */,
+				F041EFD228A8B46C006C2099 /* UserDefaultWrapper.swift in Sources */,
 				949B783A67457CACD88C177819873C29 /* Pods-SimpleTools_Example-dummy.m in Sources */,
-				F041EFC828A8AEBA006C2099 /* EnumToKey.swift in Sources */,
+				F041EFD328A8B46C006C2099 /* EnumToKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
