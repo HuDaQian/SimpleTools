@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SimpleTools'
-  s.version          = '0.1.5'
+  s.version          = '0.1.6'
   s.summary          = 'Some tool\'s module for iOS Developer & Code with Swift.'
 
 # This description is used to generate tags and improve search results.
@@ -21,6 +21,9 @@ Pod::Spec.new do |s|
   开发效率工具类合集
   Done:
   这里是已经完成的
+  Doing:
+  这里是正在做的
+  UserDefaultwrapper: wrapper + enumtoKeyPath，简单的向UserDefault中写入内容
   ToDo:
   这里是准备去做的
                        DESC
@@ -32,6 +35,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/HuDaQian/SimpleTools.git', :tag => s.version.to_s }
   s.social_media_url = 'https://hudaqian.github.io'
 
+  s.platform = :ios
   s.ios.deployment_target = '13.0'
   s.swift_version = '5.1'
     
