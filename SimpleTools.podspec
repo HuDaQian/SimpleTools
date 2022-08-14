@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/HuDaQian/SimpleTools'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'email' => '458331943@qq.com', 'coder' => 'Miloy' }
+  s.author           = { 'HuDaQian' => '458331943@qq.com'}
   s.source           = { :git => 'https://github.com/HuDaQian/SimpleTools.git', :tag => s.version.to_s }
   s.social_media_url = 'https://hudaqian.github.io'
 
