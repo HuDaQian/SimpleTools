@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         }
     }
     
-    @UserDefaultStorage(GrandLayer.FatherLayer.AccountInfo.username, defaultValue: "Miloy")
+    @UserDefaultStorage(GrandLayer.FatherLayer.AccountInfo.username.enumToKeys, defaultValue: "Miloy")
     var userName: String?
     var deleteStatus = false
     
@@ -44,7 +44,7 @@ class ViewController: UIViewController {
     }
     
     @objc func printName() {
-        print(UserDefaults.standard.string(forKey: GrandLayer.FatherLayer.AccountInfo.username) ?? "printTest")
+        print(UserDefaults.standard.string(forKey: GrandLayer.FatherLayer.AccountInfo.username.enumToKeys) ?? "printTest")
         print(userName!)
     }
 

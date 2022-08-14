@@ -35,7 +35,8 @@ Pod::Spec.new do |s|
     
   # UserDefaultWrapper
   s.subspec "UserDefaultWrapper" do |ss|
-    ss.source_files = 'SimpleTools/Util/UserDefaultWrapper/*.swift'
+    
+    ss.source_files = 'Source/Util/UserDefaultWrapper/*.swift'
   end
   
   # # module simple desc

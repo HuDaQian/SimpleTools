@@ -9,13 +9,13 @@
     "file": "LICENSE"
   },
   "authors": {
-    "email": "458331943@qq.com",
-    "coder": "Miloy"
+    "HuDaQian": "458331943@qq.com"
   },
   "source": {
     "git": "https://github.com/HuDaQian/SimpleTools.git",
     "tag": "0.1.0"
   },
+  "social_media_url": "https://hudaqian.github.io",
   "platforms": {
     "ios": "13.0"
   },
