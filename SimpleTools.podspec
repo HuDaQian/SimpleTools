@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SimpleTools'
-  s.version          = '0.1.0'
+  s.version          = '0.1.5'
   s.summary          = 'Some tool\'s module for iOS Developer & Code with Swift.'
 
 # This description is used to generate tags and improve search results.
