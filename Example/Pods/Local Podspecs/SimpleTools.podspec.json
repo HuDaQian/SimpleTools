@@ -1,8 +1,8 @@
 {
   "name": "SimpleTools",
-  "version": "0.1.0",
+  "version": "0.1.6",
   "summary": "Some tool's module for iOS Developer & Code with Swift.",
-  "description": "开发效率工具类合集\nDone:\nToDo:",
+  "description": "开发效率工具类合集\nDone:\n这里是已经完成的\nDoing:\n这里是正在做的\nUserDefaultwrapper: wrapper + enumtoKeyPath，简单的向UserDefault中写入内容\nToDo:\n这里是准备去做的",
   "homepage": "https://github.com/HuDaQian/SimpleTools",
   "license": {
     "type": "MIT",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/HuDaQian/SimpleTools.git",
-    "tag": "0.1.0"
+    "tag": "0.1.6"
   },
   "social_media_url": "https://hudaqian.github.io",
   "platforms": {
@@ -23,7 +23,7 @@
   "subspecs": [
     {
       "name": "UserDefaultWrapper",
-      "source_files": "Source/Util/UserDefaultWrapper/*.swift"
+      "source_files": "Source/UserDefaultWrapper/*.swift"
     }
   ],
   "swift_version": "5.1"

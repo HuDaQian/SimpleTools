@@ -8,45 +8,29 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
 
-    struct GrandLayer {
-        struct FatherLayer {
-            enum AccountInfo: String {
-                case username
-            }
-        }
-    }
-//
-//    @UserDefaultStorage(GrandLayer.FatherLayer.AccountInfo.username.enumTok, defaultValue: "Miloy")
-//    var userName: String?
-//    var deleteStatus = false
-//    
+    let dataSource: [(String, UIViewController.Type)] = [("UserDefaultWrapperTest", UDWTestViewController.self)]
+
+    lazy var tableView: UITableView = {
+        let tab = UITableView()
+        tab.frame = view.frame
+        tab.delegate = self
+        tab.dataSource = self
+        tab.register(UITableViewCell.self, forCellReuseIdentifier: "funcCell")
+        return tab
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-//        userName = "Miloy.Grace"
-//        let btn = UIButton(frame: CGRect(x: 100, y: 100, width: 200, height: 40))
-//        btn.backgroundColor = .cyan
-//        btn.setTitle("changeName", for: .normal)
-//        btn.addTarget(self, action: #selector(testMethod), for: .touchUpInside)
-//        view.addSubview(btn)
-//
+        setupUI()
         // Do any additional setup after loading the view, typically from a nib.
     }
-//
-//    @objc func testMethod() {
-//        if deleteStatus {
-//            userName = ""
-//        } else {
-//            userName = "Change"
-//        }
-//        deleteStatus.toggle()
-//    }
-//
-//    @objc func printName() {
-//        print(UserDefaults.standard.string(forKey: GrandLayer.FatherLayer.AccountInfo.username.enumToKeys) ?? "printTest")
-//        print(userName!)
-//    }
+    
+    func setupUI() {
+        view.addSubview(tableView)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -55,3 +39,23 @@ class ViewController: UIViewController {
 
 }
 
+extension ViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return dataSource.count
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "funcCell", for: indexPath)
+        let title = dataSource[indexPath.row].0
+        cell.textLabel?.text = title
+        return cell
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let next = dataSource[indexPath.row]
+        let nextVCType = next.1
+        let nextVC = nextVCType.init()
+        nextVC.title = next.0
+        navigationController?.pushViewController(nextVC, animated: true)
+    }
+    
+    
+}

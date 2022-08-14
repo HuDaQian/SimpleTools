@@ -16,7 +16,7 @@ import Foundation
  A.a.enumToKeys = "A_a"
  */
 
-extension RawRepresentable where RawValue == String {
+public extension RawRepresentable where RawValue == String {
     var enumToKeys: String {
         return String(reflecting: self)
             .split(separator: ".")

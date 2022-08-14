@@ -1,5 +1,7 @@
 PODS:
-  - SimpleTools (0.1.0)
+  - SimpleTools (0.1.6):
+    - SimpleTools/UserDefaultWrapper (= 0.1.6)
+  - SimpleTools/UserDefaultWrapper (0.1.6)
 
 DEPENDENCIES:
   - SimpleTools (from `../`)
@@ -9,8 +11,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SimpleTools: edd5cfef87eb8d3e527297d101bfa667a56dd241
+  SimpleTools: 02502cb97322e8688fb00245353cf958d1eb3e0b
 
-PODFILE CHECKSUM: 9d076af16ce4dc52931528d683b5d48b9f39a146
+PODFILE CHECKSUM: 3e169b7a50b94539ddd3413ccc9ba44d60e623aa
 
 COCOAPODS: 1.11.3
